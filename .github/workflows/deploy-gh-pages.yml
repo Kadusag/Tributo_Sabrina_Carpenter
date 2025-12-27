@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -22,4 +22,3 @@ jobs:
           branch: gh-pages
           folder: ./
           token: ${{ secrets.GITHUB_TOKEN }}
-
